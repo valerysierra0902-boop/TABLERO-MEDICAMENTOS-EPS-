@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: tablero-medicamentos-eps
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server
+    autoDeploy: false
